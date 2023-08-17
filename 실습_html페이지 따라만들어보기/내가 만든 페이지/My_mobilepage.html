@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example_2(Mobile Page)</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-rows: auto auto auto auto auto;
+            margin: 0px;
+        }
+        .content_container{
+            display: grid;
+            border-bottom: 3px solid black;
+            height: max-content;
+            text-align: left;
+            font-size: 14px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding: 5px;
+        }
+        #_h1{
+            background-image: url("./자료/mobile_page/header_background.png");
+            background-repeat: repeat;
+            display: flex;
+            text-align: center;
+            border: none;
+            padding: 5px;
+            border-bottom: 1px solid black;
+            justify-content: space-between;
+
+        }
+        .footer{
+            text-align: center;
+            padding: 5px;
+        }
+        .flex-container{
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            border-bottom: 1px solid black;
+        }
+        .flex-container li{
+            flex: 1;
+            text-align: center;
+            padding: 5px;
+            color: white;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        li a{
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .hidden_container{
+            background-color: white;
+            display: flex;
+            justify-content: left;
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+        }
+        .hidden_container li{
+            width: 50px;
+            text-align: left;
+            padding: 5px;
+            background-color: white;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        .hidden{
+            display: none;
+        }
+        .header_button{
+            background-position:center;
+            background-size: cover;
+            border-radius: 5px;
+            outline: none;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="_h1">
+        <button class="header_button" style="background-image: url('./자료/mobile_page/header_left_button.png');   width: 70px; "></button>
+        <div style="justify-self: center; font-size: 24px; font-weight:bold; color: white; margin: 0px;">Mobile</div>
+        <button onclick="hidden_toggle()" id="A" class="header_button" style="background-image: url('./자료/mobile_page/header_right_button.png'); width: 30px;"></button>
+    </div>
+    <div>
+        <div class="hidden" id="hidden_show" style="background-color: rgb(60, 60, 60); padding: 10px;">
+            <ul class="hidden_container">
+                <li><a href="#">버튼</a></li>
+                <li><a href="#">버튼</a></li>
+                <li><a href="#">버튼</a></li>
+                <li><a href="#">버튼</a></li>
+                <li><a href="#">버튼</a></li>
+                <li><a href="#">버튼</a></li>
+                <li><a href="#">버튼</a></li>
+                <li><a href="#">버튼</a></li>
+            </ul>
+        </div>
+    </div>
+        <ul class="flex-container" id="li_1" style="background-color: rgb(161, 16, 16);">
+            <li>버튼</li>
+            <li>버튼</li>
+            <li>버튼</li>
+            <li>버튼</li>
+        </ul>
+        <ul class="flex-container" id="li_2">
+            <li style="color: black; border-right: 1px solid black;">버튼</li>
+            <li style="color: black; border-right: 1px solid black;">버튼</li>
+            <li style="color: black; border-right: 1px solid black;">버튼</li>
+            <li style="color: black; border-right: 1px solid black;">버튼</li>
+            <li style="color: black;">버튼</li>
+        </ul>
+    <div class="content_container">
+        <div style="font-size: 20px; font-weight: bold; padding: 15px; padding-bottom: 0px;">Lorem ipsum</div>
+        <div style="font-size: 16px; padding-left: 15px;">2012-12-09 - Birthday</div>
+        <div><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in magna libero. Sed nec pharetra nunc. Proin eget magna id ipsum eleifend cursus sit amet nec lectus. Nunc quis lacus magna. Aliquam blandit, sapien ut viverra fermentum, elit tortor ornare nisi, in luctus sem massa pulvinar turpis. Cras tincidunt dictum urna ut ultricies. Nullam diam nibh, pellentesque non laoreet ut, bibendum nec mauris. Maecenas pulvinar porttitor laoreet. Vivamus bibendum purus nisl, eget aliquam lectus. Maecenas justo libero, euismod sit amet suscipit eu, vulputate eget neque. Aliquam quam est, blandit nec iaculis non, suscipit vel nunc. Proin et odio aliquam erat pharetra accumsan et quis neque. Vivamus interdum accumsan leo eu adipiscing. Integer accumsan elit non turpis faucibus porttitor. Aliquam scelerisque nisi et turpis pretium at ultricies turpis pharetra.
+
+
+            <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in magna libero. Sed nec pharetra nunc. Proin eget magna id ipsum eleifend cursus sit amet nec lectus. Nunc quis lacus magna. Aliquam blandit, sapien ut viverra fermentum, elit tortor ornare nisi, in luctus sem massa pulvinar turpis. Cras tincidunt dictum urna ut ultricies. Nullam diam nibh, pellentesque non laoreet ut, bibendum nec mauris. Maecenas pulvinar porttitor laoreet. Vivamus bibendum purus nisl, eget aliquam lectus. Maecenas justo libero, euismod sit amet suscipit eu, vulputate eget neque. Aliquam quam est, blandit nec iaculis non, suscipit vel nunc. Proin et odio aliquam erat pharetra accumsan et quis neque. Vivamus interdum accumsan leo eu adipiscing. Integer accumsan elit non turpis faucibus porttitor. Aliquam scelerisque nisi et turpis pretium at ultricies turpis pharetra.
+            
+            
+            <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in magna libero. Sed nec pharetra nunc. Proin eget magna id ipsum eleifend cursus sit amet nec lectus. Nunc quis lacus magna. Aliquam blandit, sapien ut viverra fermentum, elit tortor ornare nisi, in luctus sem massa pulvinar turpis. Cras tincidunt dictum urna ut ultricies. Nullam diam nibh, pellentesque non laoreet ut, bibendum nec mauris. Maecenas pulvinar porttitor laoreet. Vivamus bibendum purus nisl, eget aliquam lectus. Maecenas justo libero, euismod sit amet suscipit eu, vulputate eget neque. Aliquam quam est, blandit nec iaculis non, suscipit vel nunc. Proin et odio aliquam erat pharetra accumsan et quis neque. Vivamus interdum accumsan leo eu adipiscing. Integer accumsan elit non turpis faucibus porttitor. Aliquam scelerisque nisi et turpis pretium at ultricies turpis pharetra.</div>
+    </div>
+    <div class="footer">
+        <div style="font-size: 16px; font-weight: bold;">HTML5 + CSS3 Basic</div>
+        <div style="font-size: 12px;">Website Layout Basic</div>
+    </div>
+
+    <script>
+        let hidden_state = "false";
+        function hidden_toggle(){
+            if (hidden_state == "false" )
+            {
+                hidden_state = "true";
+                document.getElementById("hidden_show").style.display = "grid";
+            }else{
+                hidden_state = "false";
+                document.getElementById("hidden_show").style.display = "none";
+            }
+        }
+
+        const myList = document.getElementById('li_1');
+        const listItems = myList.getElementsByTagName('li');
+        const myList2 = document.getElementById('li_2');
+        const listItems2 = myList2.getElementsByTagName('li');
+        
+        for (let i = 0; i < listItems.length; i++){
+            listItems[i].addEventListener('click', function() {
+                window.location.href = '#';
+            })
+        }
+
+        for (let i = 0; i < listItems2.length; i++) {
+            listItems2[i].addEventListener('click', function() {
+                window.location.href = '#';
+            })
+            // while (listItems2[i].click == true){
+            //     listItems2[i].style.color = "red";
+            // }
+            // if (listItems2[i].click == false){
+            //     listItems2[i].style.color = "black;"
+            // }
+        }
+
+    </script>
+</body>
+</html>

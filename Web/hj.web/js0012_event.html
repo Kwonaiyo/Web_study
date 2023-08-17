@@ -1,0 +1,79 @@
+<html>
+    <body>
+        <h1>클릭 이벤트 : onclick</h1>
+        <p onclick="this.innerHTML='잘 눌렀네'">눌러봐</p>
+        <p id="toggle1" onclick="toggle1()">off</p>
+        <p>onclick 없다.</p>
+        <img id="img_toggle1" width="200px;" height="100px;" onclick="toggle1()"/>
+        <p id="toggle2" onclick="imgchange()" style="width: 30px; border : 1px solid red; background-color: bisque;">AA</p>
+        
+        <h1>mouse event : onmouseover, onmouseout</h1>
+        <div id="onmouseover_out">마우스 포인터가 검출되지 않아요.</div>
+        <div id="onmouseup_down">:)</div>
+
+        <div id="multi_event">여러 개의 이벤트 리스너를 등록하세요</div>
+        <script>
+            let status_toggle1="off"
+            function toggle1(){
+                if (status_toggle1 == "off"){
+                    status_toggle1 = "on";
+                    document.getElementById("img_toggle1").src = "toggleON.png";
+                }else{
+                    status_toggle1="off"
+                    document.getElementById("img_toggle1").src = "toggleOFF.png";
+                }
+                document.getElementById("toggle1").innerHTML = status_toggle1;
+            }
+            document.getElementById("img_toggle1").src="toggleOFF.png";
+
+            let A = document.getElementById("img_toggle1").src
+            function imgchange(){
+                // document.getElementById("toggle2").innerHTML = A
+                
+                if(document.getElementById("img_toggle1").src == "http://127.0.0.1:5500/toggleOFF.png"){
+                    document.getElementById("img_toggle1").src = "http://127.0.0.1:5500/toggleON.png";
+                }else{
+                    document.getElementById("img_toggle1").src = "http://127.0.0.1:5500/toggleOFF.png";
+                }
+            }
+
+            document.getElementById("onmouseover_out").onmouseover = mouseOver
+            document.getElementById("onmouseover_out").onmouseout = mouseOut
+            document.getElementById("onmouseover_out").style.width = "200px";
+            document.getElementById("onmouseover_out").style.backgroundColor = "bisque";
+            document.getElementById("onmouseover_out").style.height = "100px";
+            function mouseOver(){
+                document.getElementById("onmouseover_out").innerHTML = "마우스 검출됨";
+            }
+            function mouseOut(){
+                document.getElementById("onmouseover_out").innerHTML = "마우스 포인터가 검출되지 않아요.";
+            }
+
+            document.getElementById("onmouseup_down").onmousedown = mousedown;
+            document.getElementById("onmouseup_down").onmouseup = mouseup;
+            document.getElementById("onmouseup_down").addEventListener("onmousedown", mousedown);
+            
+            document.getElementById("onmouseup_down").style.width = "100px";
+            document.getElementById("onmouseup_down").style.backgroundColor = "bisque";
+            document.getElementById("onmouseup_down").style.height = "100px";
+            function mousedown(){
+                document.getElementById("onmouseup_down").innerHTML = "놔줘";
+                document.getElementById("onmouseup_down").style.backgroundColor = "violet";
+            }
+            function mouseup(){
+                document.getElementById("onmouseup_down").innerHTML = ":)";
+                document.getElementById("onmouseup_down").style.backgroundColor = "bisque";
+            }
+
+            document.getElementById("multi_event").addEventListener("click", multi_event_listenner1);
+            document.getElementById("multi_event").addEventListener("click", multi_event_listenner2);
+            function multi_event_listenner1(){
+                alert("1번 리스너");
+            }
+            function multi_event_listenner2(){
+                alert("2번 리스너");
+            }
+            document.getElementById("multi_event").removeEventListener("click", multi_event_listenner1);
+        </script>
+    </body>
+</html>

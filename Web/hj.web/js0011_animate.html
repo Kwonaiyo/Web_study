@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <style>
+            #container{
+                width: 200px;
+                height: 200px;
+                position: relative;
+                background-color: beige;
+            }
+            #smallbox{
+                width: 25px; height: 25px;
+                position: absolute;
+                background-color: brown;
+            }
+            #smallbox2{
+                width: 5px; height: 5px;
+                position: absolute;
+                background-color: red;
+            }  
+        </style>
+        
+    </head>
+    <body>
+        <script>
+            class move4ways{
+                constructor(x, y){
+                    this.x = x;
+                    this.y = y;
+                    this.dist = 5;
+                }
+                move_up(){
+                    if(this.y == 0)
+                    {
+                        this.y = 0;
+                        return;
+                    }else{
+                        this.y -= this.dist;
+                    }
+                    const sb = document.getElementById("smallbox");
+                    sb.style.top = this.y + "px";
+                    sb.style.left = this.x + "px";
+                }
+                move_down(){
+                    if(this.y == 175)
+                    {
+                        this.y = 175;
+                        return;
+                    }else{
+                        this.y += this.dist;
+                    }
+                    const sb = document.getElementById("smallbox");
+                    sb.style.top = this.y + "px";
+                    sb.style.left = this.x + "px";
+                }
+                move_right(){
+                    if(this.x == 175)
+                    {
+                        this.x = 175;
+                        return;
+                    }else{
+                        this.x += this.dist;
+                    }
+                    const sb = document.getElementById("smallbox");
+                    sb.style.top = this.y + "px";
+                    sb.style.left = this.x + "px";
+                }
+                move_left(){
+                    if(this.x == 0)
+                    {
+                        this.x = 0;
+                        return;
+                    }else{
+                        this.x -= this.dist;
+                    }
+                    const sb = document.getElementById("smallbox");
+                    sb.style.top = this.y + "px";
+                    sb.style.left = this.x + "px";
+                }
+                move_path(){
+                    for(i = 0; i < 10; i++) {this.move_down();}
+                    for(i = 0; i < 5; i++) {this.move_right();}
+                }
+            }
+            
+            let id = null;
+            function mymove(){
+                const sb = document.getElementById("smallbox2");
+                let pos = 0;
+                clearInterval(id);
+
+                id = setInterval(frame, 5);
+                function frame(){
+                    if (pos == 195){
+                        clearInterval(id);
+                    }else{
+                        pos ++;
+                        sb.style.top = pos+"px";
+                        sb.style.left = pos+"px";
+                    }
+                }
+            }
+            move = new move4ways(0, 0);
+        </script>
+
+        <button onclick="mymove()">움직여랏</button>
+        <button onclick="move.move_up()">상</button>
+        <button onclick="move.move_down()">하</button>
+        <button onclick="move.move_left()">좌</button>
+        <button onclick="move.move_right()">우</button>
+        <button onclick="move.move_path()">경로</button>
+        <div id = "container">
+            <div id="smallbox"></div>
+            <div id="smallbox2"></div>
+        </div>
+    </body>
+</html>

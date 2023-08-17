@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Page</title>
+    <style>
+        body{
+            margin: 0 auto;
+            width: 1080px;
+            padding: 0px;
+            padding-bottom: 10px;
+        }
+        /* .biggest_grid{
+            display: grid;
+            grid-template-columns: 15% 70% 15%;
+            border: 1px solid black;
+        } */
+        .flex_container{
+            display: flex;
+            justify-content:space-between;
+            margin: 0px;
+            padding: 0px;
+        }
+        .category_container{
+            padding: 0px; 
+            margin: 0px;
+            margin-top: -5px;
+        }
+        .flex_container ul{
+            display: flex;
+            padding: 0px;
+            margin: 0px;
+        }
+        .flex_container li{
+            list-style: none;
+            margin: 3px;
+            object-position:top right;
+            font-size: 12px;
+        }
+        li a{
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .header_button_container{
+            padding: 0px;
+            margin: 0px;
+        }
+        .grid_container{
+            display: grid;
+        }
+        .flex-container img{
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* overflow-wrap: */
+        }
+        .category_container img{
+            padding: 0px;
+            margin: 0px;
+        }
+        .side_container{
+            width: 100px;
+            float: right;
+        }
+        .side_container img{
+            padding: 10px;
+            padding-bottom: 0px;
+        }
+        .img_container{
+            display: grid;
+            grid-template-columns: 800px auto;
+            margin: 0px;
+        }
+        .img_container img{
+            width: 100%;
+            margin-top: -5px;
+            padding: 0px;
+            margin: 0px;
+        }
+        #img_nomargin img{
+            margin-top: 0px;
+        }
+        .footer{
+            background-color: rgb(170, 170, 170);
+            border-radius: 5px;
+            text-align: center;
+            object-position:top;
+            height: 80px;
+            font-size: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="side_container">
+        <div style="display: grid; height: 80px;"></div>
+        <img src="./자료/소셜 메인 분석/Images/90x160.png" style="padding-top: 0px;">
+        <img src="./자료/소셜 메인 분석/Images/90x160.png">
+        <img src="./자료/소셜 메인 분석/Images/90x160.png">
+        <img src="./자료/소셜 메인 분석/Images/90x160.png">
+        <img src="./자료/소셜 메인 분석/Images/90x160.png">
+        <img src="./자료/소셜 메인 분석/Images/90x160.png">
+        <img src="./자료/소셜 메인 분석/Images/90x160.png">
+        <img src="./자료/소셜 메인 분석/Images/90x160.png">
+        <img src="./자료/소셜 메인 분석/Images/90x160.png">
+        <img src="./자료/소셜 메인 분석/Images/90x160.png">
+    </div>
+    <div style="width: 980px;">
+        <div class="main_container">
+            <div class="header_container">
+                <div class="flex_container" style="padding: 5px;">
+                        <img onclick="img_click()" src="./자료/소셜 메인 분석/Images/title.png" style="padding: 10px; cursor: pointer;">
+                        <ul>
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                            <li><a href="#">고객센터</a></li>
+                        </ul>
+                </div>
+            <div class="category_container">
+                <div class="flex-container" style="display:flex;">
+                    <img src="./자료/소셜 메인 분석/Raw Images/네비게이션1-a지역c.png">
+                    <img src="./자료/소셜 메인 분석/Raw Images/네비게이션1-b쇼핑.png">
+                    <img src="./자료/소셜 메인 분석/Raw Images/네비게이션1-c문화.png">
+                    <img src="./자료/소셜 메인 분석/Raw Images/네비게이션1-d여행.png">
+                    <img src="./자료/소셜 메인 분석/Raw Images/네비게이션1-e레저.png">
+                    <img src="./자료/소셜 메인 분석/Raw Images/네비게이션1-f추천.png">
+                    <img src="./자료/소셜 메인 분석/Raw Images/네비게이션1-g전체보기.png">
+                </div>
+            </div>
+            <div class="category_container">
+                <div class="flex-container" style="display:flex;">
+                    <img src="./자료/소셜 메인 분석/Raw Images/네비게이션2-a스페셜.png">
+                    <img src="./자료/소셜 메인 분석/Raw Images/네비게이션2-b의류.png">
+                    <img src="./자료/소셜 메인 분석/Raw Images/네비게이션2-c패션잡화.png">
+                    <img src="./자료/소셜 메인 분석/Raw Images/네비게이션2-d스포츠레저.png">
+                    <img src="./자료/소셜 메인 분석/Raw Images/네비게이션2-e식품.png">
+                    <img src="./자료/소셜 메인 분석/Raw Images/네비게이션2-f뷰티.png">
+                    <img src="./자료/소셜 메인 분석/Raw Images/네비게이션2-g생활주방.png">
+                    <img src="./자료/소셜 메인 분석/Raw Images/네비게이션2-h홈데코취미.png">
+                    <img src="./자료/소셜 메인 분석/Raw Images/네비게이션2-i디지털가전c.png">
+                    <img src="./자료/소셜 메인 분석/Raw Images/네비게이션2-j출산유아동.png">
+                </div>
+                <div>
+                    <img src="./자료/소셜 메인 분석/Raw Images/캡처.PNG" style="width: 980px; margin-top: -5px; margin-bottom: -7px;">
+                </div>
+            </div>
+        </div>
+        <img src="./자료/소셜 메인 분석/Images/980x440.png" style="padding-top: 10px;">
+        <div class="img_container">
+            <div style="margin: 5px;">
+                <img src="./자료/소셜 메인 분석/Images/795x400.png">
+                <img src="./자료/소셜 메인 분석/Images/795x400.png">
+                <img src="./자료/소셜 메인 분석/Images/795x400.png">
+            </div>
+            <div style="margin: 5px;" id="img_nomargin">
+                <img src="./자료/소셜 메인 분석/Images/170x200.png">
+                <img src="./자료/소셜 메인 분석/Images/170x200.png">
+                <img src="./자료/소셜 메인 분석/Images/170x200.png">
+                <img src="./자료/소셜 메인 분석/Images/170x200.png">
+                <img src="./자료/소셜 메인 분석/Images/170x200.png">
+                <img src="./자료/소셜 메인 분석/Images/170x200.png">
+                <img src="./자료/소셜 메인 분석/Images/170x200.png">
+                <img src="./자료/소셜 메인 분석/Images/170x200.png">
+                <img src="./자료/소셜 메인 분석/Images/170x200.png">
+                <img src="./자료/소셜 메인 분석/Images/170x200.png">
+            </div>
+        </div>
+        <div class="footer">
+            <div style="padding: 10px;">
+                푸터
+            </div>
+        </div>
+    </div>
+    <script>
+        function img_click(){
+            window.location.href = '#';
+        }
+
+    </script>
+</body>
+</html>

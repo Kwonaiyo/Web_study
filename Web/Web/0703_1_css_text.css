@@ -1,0 +1,46 @@
+body{
+    font-size: 24px;
+    font-family: 'AppleSDGothicNeoM00';
+}
+p.wrapping{
+    white-space: normal;
+    /* white-space: nowrap; */
+}
+p.wordwrap{
+    width: 1200px;
+    word-wrap: break-word;
+}
+p.textshadow{
+    text-shadow: 0px 3px silver;
+}
+p.fuzzyshadow{
+    text-shadow: 1px 3px 3px silver;
+}
+p.multishadow{
+    text-shadow: 3px 3px 3px silver,
+                 -3px -3px -3px silver;
+}
+p.glowshadow{
+    text-shadow: 0px 0px .1em cyan;
+}
+p.hyphen1{
+    width: 200px;
+    hyphens: none;
+}
+div.textoverflow{
+    white-space: nowrap;
+    height: 200px;
+    width: 80%;
+    border: 1px solid black;
+}
+div.overflow_scroll{
+    white-space: normal;
+    height: 200px;
+    width: 80%;
+    border: 1px solid black;
+    overflow: scroll;
+}
+.float_right{
+    float: right;
+    border: 1px solid black;
+}

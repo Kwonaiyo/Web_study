@@ -1,0 +1,106 @@
+<!--
+python: scikit-learn(Machine Learning 중에서도 뉴럴 네트워크 제외, 수학적 접근)
+    tensorflow(google)/pytorch(meta- 구 facebook)(Deep learning Framework, 뉴럴 네트워크, 수학적 모델링X)
+
+javascript: tensorflow.js
+
+-->
+
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.3.2/math.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+
+        
+    </head>
+    <body>
+        <h1> ARRAY </h1>
+        <p id="arr_leng">array length</p>
+        <p id="arr">array</p>
+        
+        <p id="arr_2d">array 2D</p>
+        <p id="arr_2d_one">array 2D 값 1개</p>
+        <p id="arr_2d_length">array 2D 길이</p>
+        <p id="arr_2d_length_sub">array 2D 첫번째 행 길이</p>
+
+        <p id="arr2">array2</p>
+
+        <p id="mAddRes">mAddRes</p>
+        <p id="mAddRes2">mAddRes2</p>
+
+        <p id="tAddRes">tAddRes</p>
+        <p id="tAddRes_shape">tAddRes_shape</p>
+
+        <p id="tc_dtype">tc_dtype</p>
+        <p id="tC">tC</p>
+        
+        
+        <p id="mC">mC</p>
+
+        <p id="tD">tD</p>
+        <p id="tD_type">tD_type</p>
+
+
+        <script>
+            const myArr1 = [1, 2, 3, 4];
+            document.getElementById("arr_leng").innerHTML = myArr1.length;
+            document.getElementById("arr").innerHTML = myArr1;
+            
+            const myImg1 = [[1, 2, 3],
+                            [4, 5, 6]];
+            document.getElementById("arr_2d").innerHTML = myImg1;
+            document.getElementById("arr_2d_one").innerHTML = myImg1[1][0];
+            document.getElementById("arr_2d_length").innerHTML = myImg1.length;
+            document.getElementById("arr_2d_length_sub").innerHTML = myImg1[0].length;
+
+            const myArr2 = [[1],
+                            [2],
+                            [3],
+                            [4]];
+            document.getElementById("arr2").innerHTML = myArr2;
+
+            
+            const mA = math.matrix([[1, 2],
+                                    [3, 4],
+                                    [5, 6]]);
+            const mB = math.matrix([[1, -1],
+                                    [2, -2],
+                                    [3, -3]]);
+
+            const mAddRes = math.add(mA, mB);
+            document.getElementById("mAddRes").innerHTML = mAddRes;
+
+            const mAddRes2 = math.add(mA, 2);
+            document.getElementById("mAddRes2").innerHTML = mAddRes2;
+
+            // tensor
+            const tA = tf.tensor([[1, 2],
+                                  [3, 4],
+                                  [5, 6]]);
+            const tB = tf.tensor([[1, -1],
+                                  [2, -2],
+                                  [3, -3]]);
+
+            const tAddRes = tA.add(tB);
+            document.getElementById("tAddRes").innerHTML = tAddRes;
+
+            document.getElementById("tAddRes_shape").innerHTML = tAddRes.shape;
+
+            const tC = tf.tensor([1, 1.5, "hellooo"]);
+            document.getElementById("tc_dtype").innerHTML = tC.dtype;
+            document.getElementById("tC").innerHTML = tC;
+
+            const mC = math.matrix([1, 1.5, "hellooo"]);
+            document.getElementById("mC").innerHTML = mC;
+
+            const tD = tf.tensor(["1", "1.5", "hellooo"]);
+            document.getElementById("tD_type").innerHTML = tD.dtype;
+            document.getElementById("tD").innerHTML = tD;
+
+            const tE = tf.tensor([[1, 2], [3, 4]]);
+            // alert(tE.shape);
+            const tE_1 = tE.reshape([4, 1]);
+            alert(tE_1);
+            
+        </script>                                                                                                                                              
+</html>

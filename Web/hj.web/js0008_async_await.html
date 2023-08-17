@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async_await</title>
+</head>
+<body>
+    <p id="id_ok"></p>
+    <p id="id_error"></p>
+    <script>
+        function my_display_ok(x){
+            document.getElementById("id_ok").innerHTML = x;
+        }
+        function my_display_error(x){
+            document.getElementById("id_error").innerHTML = x;
+        }
+        async function my_function(){return "ok"}
+        my_function().then(
+            function(x){my_display_ok(x);}, function(x){my_display_error(x);}
+        );
+    </script>
+</body>
+</html>

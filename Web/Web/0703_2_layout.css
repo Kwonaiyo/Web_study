@@ -1,0 +1,32 @@
+.header{
+    height: 100px;
+    background-color: beige;
+}
+.header_box{
+    font-size: 30px;
+    float: left;
+    height: 100px;
+    width: 100px;
+}
+.contents{
+    height: 500px;
+    background-color: burlywood;
+}
+.contents_box{
+    font-size: 24px;
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    border: 1px solif black;
+    background-color: gainsboro;
+}
+.contents_box > img{
+    width: 160px;
+    height: 130px;
+}
+.footer{
+    clear: left;
+    height: 50px;
+    background-color: beige;
+}

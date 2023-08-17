@@ -1,0 +1,32 @@
+body {
+    background-color: aliceblue;
+    color: black;
+}
+
+table, td {
+    border: black solid 3px;
+}
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+.blue{
+    color: blue;
+}
+.red_back{
+    color: white;
+    background-color: red;
+}
+.green_back{
+    color: white;
+    background-color: green;
+}
+.blue_back{
+    color: white;
+    background-color: blue;
+}
+#id1{
+    color: red;
+}

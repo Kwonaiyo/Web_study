@@ -1,0 +1,23 @@
+body{
+    font-size: 30px;
+    font-family: 'AppleSDGothicNeoH00';
+}
+.box1{
+    background-color: turquoise;
+    margin: 30px;
+}
+.box2{
+    background-color: cornflowerblue;
+    padding: 30px;
+}
+.box3{
+    background-color: coral;
+    height: 100px;
+    width: 500px;
+}
+.box4{
+    background-color: sandybrown;
+    height: 50%;
+    width: 50%;
+    min-height: 100px;
+}

@@ -1,0 +1,104 @@
+body{
+    font-size: 24px;
+    font-family: 'AppleSDGothicNeoB00';
+}
+.div_block{
+    display: block;
+    background-color: aquamarine;
+}
+.div_inline{
+    display: inline;
+    background-color: aqua;
+    width: 50%;
+}
+.div_inline_block{
+    display: inline-block;
+    background-color: skyblue;
+    width: 50%;
+}
+.div_none{
+    display: none;
+    background-color: azure;
+}
+.vis_1{
+    width: 50px; height: 50px;
+    background-color: tomato;
+}
+.vis_2{
+    width: 50px; height: 50px;
+    background-color: darkcyan;
+    visibility: hidden; /* hidden, collapse, visible */
+}
+.vis_3{
+    width: 50px; height: 50px;
+    background-color: blueviolet;
+}
+.test_position{
+    background-color: palegreen;
+    margin: 10px;
+}
+.test_relative_static{
+    background-color: darkkhaki;
+}
+.test_relative{
+    background-color: darkgoldenrod;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+.test_absolute_static{
+    background-color: hotpink;
+    color: white;
+}
+.test_absolute{
+    background-color: deeppink;
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 400px;
+}
+.test_absolute2{
+    background-color: deeppink;
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 600px;
+}
+.test_fixed{
+    background-color: deeppink;
+    color: white;
+    position: fixed;
+    top: 10px;
+    left: 800px;
+}
+.test_sticky_static{
+    background-color: cornflowerblue;
+}
+.test_sticky{
+    background-color: blueviolet;
+    position: sticky;
+    top: 10px;
+    left: 800px;
+}
+.z_test{
+    width: 100px; height: 100px;
+    position: absolute;
+}
+.obj1{
+    background-color: darkorange;
+    z-index: 1;
+    top: 200px;
+    left: 1600px;
+}
+.obj2{
+    background-color: darksalmon;
+    z-index: 2;
+    top: 250px;
+    left: 1650px;
+}
+.obj3{
+    background-color: darkseagreen;
+    z-index: 3;
+    top: 300px;
+    left: 1700px;
+}

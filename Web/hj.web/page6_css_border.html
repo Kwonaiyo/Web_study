@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <style>
+            .none{border-style: none;}
+            .dotted{border-style: dotted;}
+            .dashed{border-style: dashed;}
+            .solid{
+                border-style: solid;
+                border-width: 3px;
+            }
+            .solid_blue{
+                border-style: solid;
+                border-color: blue;
+                border-radius: 14px;
+            }
+            .solid_red{
+                border: 5px solid red;
+                border-radius: 10px;
+                border-radius: 5px 10px 20px 30px;
+            }
+            .solid_border{
+                border: 5px solid lightblue;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 10px;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 30px;
+            }
+            .double{border-style: double;}
+            
+            .groove{
+                border-style: groove;
+                border-width: 0px;
+            }
+            .ridge{border-style: ridge;}
+            .inset{border-style: inset;}
+            .outset{border-style: outset;}
+            .hidden{border-style: hidden;}
+            #t1{
+                border: 2px solid blue;
+                border-collapse: collapse;  /*디폴트는 separate*/
+                border-spacing: 20px;
+            }
+            td{
+                border: 1px solid red;
+            }
+
+        </style>
+    </head>
+    <body>
+        <p class="none">경계 없음</p>
+        <p class="dotted">점 경계</p>
+        <p class="dashed">쇄선</p>
+        <p class="solid">실선</p>
+        <p class="solid_blue">파란 실선</p>
+        <p class="solid_red">붉은 실선</p>
+        <p class="solid_border">보더스타일?</p>
+        <p class="double">이중 실선</p>
+
+        <p class="groove">groove</p>
+        <p class="ridge">ridge</p>
+        <p class="inset">inset</p>
+        <p class="outset">outset</p>
+        <p class="hidden">hidden</p>
+
+        <table id="t1">
+            <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+            <tr><td>5</td><td>6</td><td>7</td><td>8</td></tr>
+            <tr><td>9</td><td>10</td><td>11</td><td>12</td></tr>
+        </table>
+    </body>
+</html>

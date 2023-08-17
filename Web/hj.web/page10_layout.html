@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <style>
+            div.overflow_scroll{
+                background-color: #9494ed;
+                width: 100px;
+                height: 100px;
+                overflow: scroll;
+            }
+            div.button{
+                background-color: #5ec878;
+                width: 50px;
+                height: 50px;
+                margin: 5px;
+
+            }
+            img.float_right{
+                float: right;
+                border: 1px solid red;
+            }
+
+            .header{
+                height: 50px;
+                background-color: antiquewhite;
+                
+            }
+            .contents{
+                height: 300px;
+                background-color: rgb(192, 142, 76);
+            }
+            .footer{
+                clear: left;    /* left both */
+                height: 50px;
+                background-color: rgb(120, 96, 66);
+            }
+            .header_box{
+                float: left;
+                width: 50px;
+            }
+            .contents_box{
+                float: left;
+                height: 90px;
+                width: 90px;
+                background-color: aqua;
+                margin: 1px;
+                /* border: 1px solid red; */
+            }
+            .contents_box > img{
+                width: 50px;
+                height: 50px;
+            }
+            .clear_box{
+                width: 100px;
+                height: 100px;
+                background-color: aliceblue;
+                /*float: left;*/
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>CSS Overflow</h1>
+        <div class="overflow_scroll">
+            이 글은 스크롤과 함께 사용될 글이다. 이 글은 스크롤과 함께 사용될 글이다. 이 글은 스크롤과 함께 사용될 글이다. 이 글은 스크롤과 함께 사용될 글이다.이 글은 스크롤과 함께 사용될 글이다.
+        </div>
+        <div class="overflow_scroll">
+            <div class="button">b1</div>
+            <div class="button">b2</div>
+            <div class="button">b3</div>
+            <div class="button">b4</div>
+            <div class="button">b5</div>
+            <div class="button">b6</div>
+        </div>
+
+        <p>이 글은 float를 test하기 위한 글입니다.</p>
+        <p>이 글은 float를 test하기 위한 글입니다.</p>
+        <p>이 글은 float를 test하기 위한 글입니다.</p>
+        <img class="float_right" src="제목 없음.jpg">
+        <p>이 글은 float를 test하기 위한 글입니다.</p>
+        <p>이 글은 float를 test하기 위한 글입니다.</p>
+        <p>이 글은 float를 test하기 위한 글입니다.</p>
+        <p>이 글은 float를 test하기 위한 글입니다.</p>
+        <p>이 글은 float를 test하기 위한 글입니다.</p>
+
+        <div class="main_container"></div>
+            <div class="header">
+
+                <div class="header_box">메뉴1</div>
+                <div class="header_box">메뉴2</div>
+                <div class="header_box">메뉴3</div>
+                <div class="header_box">메뉴4</div>
+            </div>
+            <div class="contents">
+
+                <div class="contents_box">Box1
+                    <img src="바나나.PNG"/>
+                    <div>10,000원</div>
+                </div>
+                <div class="contents_box">Box2
+                    <img src="바나나.PNG"/>
+                    <div>15,000원</div>
+                </div>
+                <div class="contents_box">Box3
+                    <img src="바나나.PNG"/>
+                    <div>12,000원</div>
+                </div>
+                <div class="contents_box">Box4
+                    <img src="바나나.PNG"/>
+                    <div>8,000원</div>
+                </div>
+                <div class="contents_box">Box5
+                    <img src="바나나.PNG"/>
+                    <div>11,000원</div>
+                </div>
+                <div class="contents_box">Box6
+                    <img src="바나나.PNG"/>
+                    <div>10,000원</div>
+                </div>
+            </div>
+            <div class="footer">
+                바닥글입니다.
+            </div>
+           
+        </div>
+    </body>
+</html>

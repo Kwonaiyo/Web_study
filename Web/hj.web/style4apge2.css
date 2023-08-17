@@ -1,0 +1,15 @@
+body{
+    background-color:aquamarine;
+}
+table, td{
+    border :black solid 1px;
+}
+.c1, .c2{
+    color: blue;
+}
+.c1_back{
+    background: red;
+}
+#id1{
+    color: blueviolet
+}

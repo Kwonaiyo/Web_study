@@ -1,0 +1,9 @@
+body{
+    color:cyan;
+    background-color: red;
+    background-image: url("https://i3.ruliweb.com/img/22/07/15/181ff5a1389524cc2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100% 100%;
+}

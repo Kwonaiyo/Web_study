@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <style>
+            body{
+    color: rgb(80, 80, 80);
+    font-size: 24px;
+    font-family: 'AppleSDGothicNeoB00';
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    background-color: transparent;
+    gap: 5px;
+}
+.grid-inline-container{
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    background-color: transparent;
+    gap: 5px;
+}
+.gridlines-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    background-color: transparent;
+    gap: 5px;
+}
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.item2{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.item8{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.item9{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.grid-item{
+    background-color: skyblue;
+    border: 3px solid slategray;
+    padding: 20px;
+    text-align: center;
+}
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+    
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+    
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">9</div>
+        </div>
+        <br>
+        <div class="grid-inline-container">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+    
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+    
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">9</div>
+        </div>
+        <div class="gridlines-container">
+            <div class="grid-item item1">1</div>
+            <div class="grid-item item2">2</div>
+            <div class="grid-item item3">3</div>
+    
+            <div class="grid-item item4">4</div>
+            <div class="grid-item item5">5</div>
+            <div class="grid-item item6">6</div>
+    
+            <div class="grid-item item7">7</div>
+            <div class="grid-item item8">8</div>
+            <div class="grid-item item9">9</div>
+        </div>
+    </body>
+</html>

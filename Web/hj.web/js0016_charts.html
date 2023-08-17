@@ -1,0 +1,37 @@
+<html>
+    <body>
+        <canvas id="canvas1" width="300px" height="300px" style="border: 1px solid black"></canvas>
+        <script>
+            const xData = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150]
+            const yData = [10, 20, 15, 13, 10, 12, 13, 14, 15, 16, 30]
+
+            const canvas = document.getElementById("canvas1")
+            const ctx = canvas.getContext("2d");
+
+            // (수평 scale, 가로방향 비스듬히, 세로방향 비스듬히, 수직 크기, 원점의 x좌표 이동, 원점의 y좌표 이동)
+            ctx.transform(1, 0, 0, -1, 0, canvas.height);
+
+            // 점을 그리다.
+            ctx.fillStyle = "red";
+            for(let i=0; i<xData.length; i++){
+                let x=xData[i] * canvas.width/150;
+                let y=yData[i] * canvas.height/30;
+                ctx.beginPath();
+                ctx.ellipse(x, y, 3, 3, 0, 0, Math.PI*2);
+                ctx.fill();
+            }
+
+            // 선을 그리다.
+            ctx.strokeStyle = "blue";
+            for(let i=0; i<xData.length; i++){
+                let x = xData[i] * canvas.width/150;
+                let y = yData[i] * canvas.height/30;
+                ctx.moveTo(x, y)
+                x = xData[i+1] * canvas.width/150;
+                y = yData[i+1] * canvas.height/30;
+                ctx.lineTo(x, y);
+                ctx.stroke();
+            }
+        </script>
+    </body>
+</html>

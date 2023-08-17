@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example_1</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: 5% 90% 5%;
+            background-color: rgb(255, 255, 255);
+            background-size: 100% 100%;
+        }
+        .main-container{
+            display: grid;
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            height: 100% 100%;
+            margin: 10px;
+        }
+        .header-container{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            height: 200px;
+            margin: 10px;
+        }
+        .body-container{
+            display: grid;
+            grid-template-columns: 80% 20%;
+            margin: 10px;
+        }
+        .grid_head_text{
+            display: flexbox;
+            text-align: left;
+            
+            font-size: 28px;
+            font-family:cursive;
+            padding: 0px;
+        }
+        .flex_container{
+            display: flex;
+            margin: 0px;
+            padding: 0px;
+        }
+        .grid_button_container{
+            display: grid;
+            grid-template-rows: 20% 60% 20%;
+            padding: 5px;
+            justify-items: right;
+            
+        }
+        .button_container{
+            display: grid;
+            height: min-content;
+            width: max-content;
+            
+        }
+        .main_article_container{
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+            text-align: left;
+        }
+        .article_header{
+            margin-top: 15px;
+            margin-left: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .article_body{
+            padding: 0px;
+            margin: 0px;
+            margin-bottom: 15px;
+            margin-left: 10px;
+        }
+        .something{
+            display: grid; 
+            border: 1px solid black;
+            margin: 10px;
+            height: max-content;
+        }
+        ul{
+            display: flex;
+            list-style-type: none;
+            margin: 0px;
+            padding: 10px;
+            font-size: 15px;
+        }
+        li a{
+            text-decoration: none;
+            border: 1px solid black;
+            color: blue;
+            padding: 15px;
+            justify-content: right;
+        }
+        li{
+            display: inline;     
+        }
+
+        ul a:hover{
+            background-color: rgb(0,0,0);
+            color: white;
+        }
+        .image_box_a{
+            display:flex;
+            width: unset;
+            height: 100px;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            padding: 10px;
+        }
+        .image_box_b{
+            display:flex;
+            width: unset;
+            height: 100px;
+            border-bottom: 1px solid black;
+            padding: 10px;
+        }
+        .imamge_box_c{
+            display:flex;
+            width: unset;
+            height: 100px;
+            padding: 10px;
+        }
+        .imgfile{
+            /* justify-content: center; */
+            align-self: center;
+            width : 60px;
+            height: 60px;
+        }
+        .content_box{
+            text-align: left; justify-content: right;
+            margin-top: 20px; margin-bottom: 20px; margin-left: 10px; margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">LEFT</div>
+    <div class="main-container">
+        <div class="header-container">
+            <div class="grid_head_text">
+                    <br><br>
+                    <div style="margin: 20px;">Rint Development</div>
+                    <div style="font-size: 24px; margin: 20px;">HTML5 + CSS3 Basic</div>
+            </div>
+            <div class="grid_button_container">
+                <div class="button_container">
+                    
+                        <ul style="justify-content: flex-end;">
+                            <li><a href="#" style="border-top-left-radius: 10px; border-bottom-left-radius: 10px">Web</a></li>
+                            <li><a href="#">Mobil</a></li>
+                            <li><a href="#">Game</a></li>
+                            <li><a href="#">Simulation</a></li>
+                            <li><a href="#" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;">Data</a></li>
+                        </ul>
+                    
+                </div>
+                <div></div>
+                <div class="button_container">
+                    <ul>
+                        <li><a href="#" style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">HTML5</a></li>
+                        <li><a href="#">CSS3</a></li>
+                        <li><a href="#">JAVASCRIPT</a></li>
+                        <li><a href="#">jQuery</a></li>
+                        <li><a href="#" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;">Node.js</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+        <div class="body-container">
+            <div>
+                <div class="main_article_container">
+                    <div class="article_header">Main Ariticle</div>
+                    <div class="article_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in magna libero. Sed nec pharetra nunc. Proin eget magna id ipsum eleifend cursus sit amet nec lectus. Nunc quis lacus magna. Aliquam blandit, sapien ut viverra fermentum, elit tortor ornare nisi, in luctus sem massa pulvinar turpis. Cras tincidunt dictum urna ut ultricies. Nullam diam nibh, pellentesque non laoreet ut, bibendum nec mauris. Maecenas pulvinar porttitor laoreet. Vivamus bibendum purus nisl, eget aliquam lectus. Maecenas justo libero, euismod sit amet suscipit eu, vulputate eget neque. Aliquam quam est, blandit nec iaculis non, suscipit vel nunc. Proin et odio aliquam erat pharetra accumsan et quis neque. Vivamus interdum accumsan leo eu adipiscing. Integer accumsan elit non turpis faucibus porttitor. Aliquam scelerisque nisi et turpis pretium at ultricies turpis pharetra.</div>
+                </div>
+                <div class="main_article_container">
+                    <div class="article_header">Main Ariticle</div>
+                    <div class="article_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in magna libero. Sed nec pharetra nunc. Proin eget magna id ipsum eleifend cursus sit amet nec lectus. Nunc quis lacus magna. Aliquam blandit, sapien ut viverra fermentum, elit tortor ornare nisi, in luctus sem massa pulvinar turpis. Cras tincidunt dictum urna ut ultricies. Nullam diam nibh, pellentesque non laoreet ut, bibendum nec mauris. Maecenas pulvinar porttitor laoreet. Vivamus bibendum purus nisl, eget aliquam lectus. Maecenas justo libero, euismod sit amet suscipit eu, vulputate eget neque. Aliquam quam est, blandit nec iaculis non, suscipit vel nunc. Proin et odio aliquam erat pharetra accumsan et quis neque. Vivamus interdum accumsan leo eu adipiscing. Integer accumsan elit non turpis faucibus porttitor. Aliquam scelerisque nisi et turpis pretium at ultricies turpis pharetra.</div>
+                </div>
+                <div class="main_article_container">
+                    <div class="article_header">Main Ariticle</div>
+                    <div class="article_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in magna libero. Sed nec pharetra nunc. Proin eget magna id ipsum eleifend cursus sit amet nec lectus. Nunc quis lacus magna. Aliquam blandit, sapien ut viverra fermentum, elit tortor ornare nisi, in luctus sem massa pulvinar turpis. Cras tincidunt dictum urna ut ultricies. Nullam diam nibh, pellentesque non laoreet ut, bibendum nec mauris. Maecenas pulvinar porttitor laoreet. Vivamus bibendum purus nisl, eget aliquam lectus. Maecenas justo libero, euismod sit amet suscipit eu, vulputate eget neque. Aliquam quam est, blandit nec iaculis non, suscipit vel nunc. Proin et odio aliquam erat pharetra accumsan et quis neque. Vivamus interdum accumsan leo eu adipiscing. Integer accumsan elit non turpis faucibus porttitor. Aliquam scelerisque nisi et turpis pretium at ultricies turpis pharetra.</div>
+                </div>
+            </div>
+            <div style="width: unset;">
+                <div class="something">
+                    <div style="display:flex;">
+                        <ul onclick="First_click()" class="First1" style="display:inline; width: 50%; padding: 0px; background-color: black; color: white;">
+                            <li name="First1" style="width: 50%; height: unset; margin:0px;"><c href="#">First</c></li>
+                        </ul>
+                        <ul onclick="Second_click()" class="Second1" style="display: inline; width: 50%; padding: 0px; border-left: 1px solid black;">
+                            <li name="Second1" style="width: 50%; height: unset; margin:0px;"><c href="#">Second</c></li>
+                        </ul> 
+                    </div>
+                    <div style="width: unset;">
+                        <div class="image_box_a" id="onmouseup_downA" >
+                            <img class="imgfile" id="imgA" src="./자료/45x45.png" />
+                            <div class="content_box" id="conA">CSS3 Transition<br>2012-03-15</div>
+                        </div>
+                        <div class="image_box_b" id="onmouseup_downB" >
+                            <img class="imgfile" id="imgB" src="./자료/45x45.png" />
+                            <div class="content_box" id="conB">CSS3 Animation<br>2012-03-15</div>
+                        </div>
+                        <div class="image_box_b" id="onmouseup_downC" >
+                            <img class="imgfile" id="imgC" src="./자료/45x45.png" />
+                            <div class="content_box" id="conC">CSS3 Border<br>2012-03-15</div>
+                        </div>
+                        <div class="imamge_box_c" id="onmouseup_downD">
+                            <img class="imgfile" id="imgD" src="./자료/45x45.png" />
+                            <div class="content_box" id="conD">CSS3 Box<br>2012-03-15</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="border: 1px solid black; margin: 5px; width: unset; font-size: 20px; font-weight: bold; padding: 10px;">
+                <div style="font-size: 20px; font-weight: bold;"> HTML5 + CSS3 Basic </div>
+                <div style="font-size: 16px; font-style: italic;">Website Layout Basic</div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">RIGHT</div>
+    <script>
+        function Second_click(){
+            let F_address = document.getElementsByClassName("First1");
+            let S_address = document.getElementsByClassName("Second1");
+            
+            F_address[0].style.backgroundColor = "black";
+            document.getElementsByName("First1")[0].style.color = "white";
+            document.getElementsByName("Second1")[0].style.color = "black";
+            S_address[0].style.backgroundColor = "white";
+
+            document.getElementById("imgA").src = "./자료/45x45.png"
+            document.getElementById("conA").innerHTML = "CSS3 Transition<br>2012-03-15"
+            document.getElementById("imgB").src = "./자료/45x45.png"
+            document.getElementById("conB").innerHTML = "CSS3 Animation<br>2012-03-15"
+            document.getElementById("imgC").src = "./자료/45x45.png"
+            document.getElementById("conC").innerHTML = "CSS3 Border<br>2012-03-15"
+            document.getElementById("imgD").src = "./자료/45x45.png"
+            document.getElementById("conD").innerHTML = "CSS3 Box<br>2012-03-15"
+
+        }
+        function First_click(){
+            let F_address = document.getElementsByClassName("First1");
+            let S_address = document.getElementsByClassName("Second1");
+            
+            S_address[0].style.backgroundColor = "black";
+            document.getElementsByName("Second1")[0].style.color = "white";
+            document.getElementsByName("First1")[0].style.color = "black";
+            F_address[0].style.backgroundColor = "white";
+
+            document.getElementById("imgA").src = "./자료/45x45.png"
+            document.getElementById("conA").innerHTML = "HTML5 Canvas<br>2013-03-15"
+            document.getElementById("imgB").src = "./자료/45x45.png"
+            document.getElementById("conB").innerHTML = "HTML5 Audio<br>2013-03-15"
+            document.getElementById("imgC").src = "./자료/45x45.png"
+            document.getElementById("conC").innerHTML = "HTML5 Video<br>2013-03-15"
+            document.getElementById("imgD").src = "./자료/45x45.png"
+            document.getElementById("conD").innerHTML = "HTML5 Semagisfldwkfns<br>2013-03-15"
+        }
+        
+        document.getElementById("onmouseup_downA").onmousedown = mousedownA;
+        document.getElementById("onmouseup_downA").onmouseup = mouseupA;
+        document.getElementById("onmouseup_downB").onmousedown = mousedownB;
+        document.getElementById("onmouseup_downB").onmouseup = mouseupB;
+        document.getElementById("onmouseup_downC").onmousedown = mousedownC;
+        document.getElementById("onmouseup_downC").onmouseup = mouseupC;
+        document.getElementById("onmouseup_downD").onmousedown = mousedownD;
+        document.getElementById("onmouseup_downD").onmouseup = mouseupD;
+        function mousedownA(){
+            document.getElementById("onmouseup_downA").style.color = "red";
+        }
+        function mouseupA(){
+            document.getElementById("onmouseup_downA").style.color = "black";
+        }
+        function mousedownB(){
+            document.getElementById("onmouseup_downB").style.color = "red";
+        }
+        function mouseupB(){
+            document.getElementById("onmouseup_downB").style.color = "black";
+        }
+        function mousedownC(){
+            document.getElementById("onmouseup_downC").style.color = "red";
+        }
+        function mouseupC(){
+            document.getElementById("onmouseup_downC").style.color = "black";
+        }
+        function mousedownD(){
+            document.getElementById("onmouseup_downD").style.color = "red";
+        }
+        function mouseupD(){
+            document.getElementById("onmouseup_downD").style.color = "black";
+        }
+    </script>
+</body>
+</html> 

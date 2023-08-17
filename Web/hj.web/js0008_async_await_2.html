@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <p id="id_ok"></p>
+        <script>
+            async function my_display(){
+                let myPromise = new Promise(
+                    function(resolve, reject){
+                        resolve("ok");
+                    }
+                );
+                document.getElementById("id_ok").innerHTML = await myPromise;
+            }
+
+            my_display();
+        </script>
+    </body>
+</html>

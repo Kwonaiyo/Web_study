@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise</title>
+</head>
+<body>
+    <h1>JS promise</h1>
+    <p style="color: blue;" id="id_ok"></p>
+    <p style="color: red;" id="id_error"></p>
+    <script>
+        function my_display_blue(x){
+            document.getElementById("id_ok").innerHTML = x;
+        }
+        function my_display_red(x){
+            document.getElementById("id_error").innerHTML = x;
+        }
+        // my_display("ㅋㅋ");
+
+        let myPromise = new Promise(
+            function(myResolve, myReject){
+                let x = 0;
+
+                // 서버가 잘 응답했다면, x에 뭔가 자연수가 올 것을 약속
+                if (x == 0){
+                    myResolve("ok");
+                }else{
+                    myReject("error");
+                }
+
+            }
+        );
+        myPromise.then(my_display_blue, my_display_red);
+    </script>
+</body>
+</html>

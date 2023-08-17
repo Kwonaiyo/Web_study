@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <p>JQuery Effect</p>
+        <p>show / hide</p>
+        <p class="jq_toggle">toggle</p>
+        <button class="jq_toggle_btn">toggle 테스트</button>
+        <script>
+            $("button.jq_toggle_btn").click(
+                ()=>{$("p.jq_toggle").toggle();}
+            );
+        </script>
+
+        <br>
+        <br>
+        
+        <p>fade in / out</p>
+        <button class="fadein_btn">fadein_btn</button>
+        <button class="fadeout_btn">fadeout_btn</button>
+        <button class="fade_toggle_btn">fade_toggle_btn</button>
+        <div id="fadein1" style="width: 50px; height: 50px; background-color: red; display: none;"></div>
+        <div id="fadein2" style="width: 50px; height: 50px; background-color: green; display: none;"></div>
+        <div id="fadein3" style="width: 50px; height: 50px; background-color: blue; display: none;"></div>
+        <script>
+            $("button.fadein_btn").click(
+                ()=>{
+                    $("#fadein1").fadeIn();
+                    $("#fadein2").fadeIn("slow");
+                    $("#fadein3").fadeIn(5000);
+                }
+            );
+            $("button.fadeout_btn").click(
+                ()=>{
+                    $("#fadein1").fadeOut();
+                    $("#fadein2").fadeOut("slow");
+                    $("#fadein3").fadeOut(5000);
+                }
+            );
+            $("button.fade_toggle_btn").click(
+                ()=>{
+                    $("#fadein1").fadeToggle();
+                    $("#fadein2").fadeToggle("slow");
+                    $("#fadein3").fadeToggle(5000);
+                }
+            );
+        </script>
+    </body>
+</html>

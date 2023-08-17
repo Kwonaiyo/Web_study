@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+        <style>
+           #animate_box{
+                background-color: brown;
+                width: 50px; height: 50px;
+                position: absolute;
+           }
+        </style>
+        
+    </head>
+    <body>
+        <button id="animate_btn">움직임 시작하기</button>
+        <div id="animate_box"></div>
+        <script>
+            $("#animate_btn").click(
+                ()=>{$("#animate_box").delay(2000).animate(
+                    {
+                        left: '300px',
+                        opacity: '0.1',
+                        height: '0px',
+                        width: '0px'
+                    }
+                    )}
+            )
+        </script>
+        
+    </body>
+</html>

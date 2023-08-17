@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            display: flex;
+            background-color: blueviolet;
+            justify-content: space-around; /* 가로방향 정렬 center flex-start flex-end space-around */
+            align-items: center; /* 세로방향 정렬 center flex-start flex-end stretch(높이에 맞게 길게 늘림) baseline(글자 밑에 맞춤) */
+            height: 200px;
+        }
+        .flex_item{
+            background-color: blanchedalmond;
+            margin: 10px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <h1 class="flex_item">menu1</h1>
+        <h2 class="flex_item">menu2</h2>
+        <h3 class="flex_item">menu3</h3>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+body{
+    color: rgb(80, 80, 80);
+    font-size: 24px;
+    font-family: 'AppleSDGothicNeoB00';
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 100px 200px 300px auto;
+    padding: 10px;
+    background-color: azure;
+    gap: 5px;
+}
+.grid-inline-container{
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    background-color: transparent;
+    gap: 5px;
+}
+.gridlines-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    background-color: transparent;
+    gap: 5px;
+}
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.item2{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.item8{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.item9{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.grid-item{
+    background-color: skyblue;
+    border: 3px solid slategray;
+    padding: 20px;
+    text-align: center;
+}

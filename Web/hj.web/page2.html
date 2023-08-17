@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style4apge2.css">
+        <script type="text/javascript" src="script4page2.js"></script>
+        <style>
+            
+        </style>
+        <title>Hello World-!</title>
+    </head>
+    <body>
+        <p>DOM: Document Object Model</p>
+        <h1>HTML : Hyper Text Markup Language</h1>
+        <h1>제목글 h1: headline</h1>
+        <h1>1장. ㅁ</h1>
+        <h2>1.1. ㅇ</h2>
+        <h1>2장. ㄱ</h1>
+        <h2>2.1. ㄴ</h2>
+        <h2>2.2. ㄹㅇ</h2>
+        <p>h1, h2, h3, h4, h5, h6</p>
+        <p>본문 paragraph</p>
+        <p>본문내용 1</p>
+        <p>본문내용 2</p>
+        <br>
+            <img alt="바나나" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA2MDJfMTkw%2FMDAxNjg1NzA0MzE0NTE0.e3vRhr0c0RpXZN12_ReKLMtg-soLxOoe5k4SIdhBEUsg.E-5KFpfbqq-qtT11c-UnMgA0IXYZsAGJHUASvaS1j4og.PNG.chohk749%2Fimage.png&type=a340">
+        <br>
+        <br> break::
+
+        <button onclick="alert('ㅋㅋㅋ')">버튼</button>
+        <a href="http://naver.com"> 네이버? HyperLink </a>
+        <ul>
+            <li>목록1</li>
+            <li>목록2</li>
+            <li>목록3</li>
+        </ul>
+        <ol>
+            <li>목록1</li>
+            <li>목록2</li>
+            <li>목록3</li>
+        </ol>
+
+        <table>
+            
+            <tr><td>1</td><td>2</td><td>3</td></tr>
+            <tr><td>4</td><td>5</td><td>6</td></tr>
+            <tr><td>7</td><td>8</td><td>9</td></tr>
+        </table>
+        <br>
+        <table>
+            <thead>
+                <tr><th>1</th><th>2</th><th>3</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>2</td><td>3</td></tr>
+                <tr><td>4</td><td>5</td><td>6</td></tr>
+                <tr><td>7</td><td>8</td><td>9</td></tr>
+            </tbody>
+            
+        </table>
+
+        <form action="api/risk" method="get">
+            <label for="input1">위험 감지 거리:</label>
+            <input type="text" name="input1" placeholder="5"></input>
+            <br>
+            <label for="input2">위험 감지 최소 거리:</label>
+            <input type="text" name="input2" placeholder="10"></input>
+            <br>
+
+            <label for="input3">2*20 텍스트 입력: </label>
+            <textarea rows="2" cols="20" name="input3"></textarea>
+            
+
+            <br>
+            <label for="input4">pw입력 : </label>
+            <input type="password" name="input4"></input>
+            <br>
+            <input type="radio" name="inputradio" value="tip1">tip 1</input>
+            <input type="radio" name="inputradio" value="tip2">tip 2</input>
+            <input type="radio" name="inputradio" value="tip3">tip 3</input>
+            <br>
+            <input type="radio" name="powersource" value="pow220">power source 220v</input>
+            <input type="radio" name="powersource" value="pow380">power source 380v</input>
+            <input type="radio" name="powersource" value="powBat">power source battery</input>
+            <br>
+            <input type="checkbox" name="check1" value="chk1">check1</input>
+            <input type="checkbox" name="원재료1" value="ok">원재료1</input>
+            <input type="checkbox" name="원재료2" value="ok">원재료2</input>
+            <input type="checkbox" name="원재료3" value="ok">원재료3</input>
+            <br>
+            <input type="file" name="myfile"/>
+            <br>
+            <input type="image" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA2MDJfMTkw%2FMDAxNjg1NzA0MzE0NTE0.e3vRhr0c0RpXZN12_ReKLMtg-soLxOoe5k4SIdhBEUsg.E-5KFpfbqq-qtT11c-UnMgA0IXYZsAGJHUASvaS1j4og.PNG.chohk749%2Fimage.png&type=a340"/>
+            <br>
+            <input type="color" name="색상" value="#0000ff"/>
+            <br>
+            <input type="date" name="date_start">시작일 선택</input>
+            <input type="date" name="date_end">종료일 선택</input>
+            <input type="datetime-local" name="datetime">자세한 일정 선택</input>
+            <input type="month" name="month"/>
+            <br>
+            숫자: <input type="number" name="num" min="10" max="100"/>
+
+            <br>
+            <input type="email" name="email_add">
+            <input type="email" name="email_add_mul" multiple>
+            <br> web url: <input type="url" name="web_add"/>
+            <br> 
+            
+            <input type="button" value="클릭하세요" onclick="alert('ㅋㅋ')"/>
+            <button onclick="alert('ㅋㅋㅋ')">눌러요</button>
+            <br>
+            <input type="submit" value="보내주세요!!"></input>
+            <input type="reset" value="초기화 해주세요"/>
+            <br>
+            <br>
+            <br> 
+                <p>p로 만든 글</p>
+                <p>p로 만든 글</p>
+                <div>div로 만든 글 block요소(줄바꿈이 됨)</div>
+                <div>div로 만든 글</div>
+                <span>span으로 만든 글 inline요소</span>
+                <span>span으로 만든 글</span>
+
+                <div class="c1">c1으로 구분되는 글</div>
+                <span class="c2 c1_back">c2로 구분되는 글</span>
+
+                <br><div id="id1">id1로 구분되는 글</div>
+                <div style="color:antiquewhite">구형 HTML 스타일</div>
+
+                <br>
+            
+
+        </form>
+
+        <button onclick="my_func_1()">my_func_1 눌러요</button>
+        <script>
+            
+        </script>
+
+    </body>
+</html>

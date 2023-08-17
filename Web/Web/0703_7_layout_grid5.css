@@ -1,0 +1,54 @@
+body{
+    color: rgb(80, 80, 80);
+    font-size: 24px;
+    font-family: 'AppleSDGothicNeoB00';
+}
+
+.gridlines-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    padding: 10px;
+    background-color: transparent;
+    gap: 5px;
+}
+.itemHeader{ /* Header */
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.itemMenu{ /* MENU */
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.itemMain{ /* MAIN */
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.itemRight{ /* RIGHT */
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+.itemFooter{ /* FOOTER */
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+.gridlines-container2{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    padding: 10px;
+    background-color: transparent;
+    gap: 5px;
+}
+.item8{
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+.grid-item{
+    background-color: skyblue;
+    border: 3px solid slategray;
+    padding: 20px;
+    text-align: center;
+}

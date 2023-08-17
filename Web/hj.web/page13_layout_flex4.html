@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            display: flex;
+            background-color: blueviolet;
+        }
+        .flex_item{
+            background-color: blanchedalmond;
+            margin: 10px;
+            /* width: 100px; */
+            /* padding: 20px; */
+            text-align: center;
+        }
+        .flex_item2{
+            background-color: blanchedalmond;
+            margin: 10px;
+            width: 100px;
+            text-align: center;
+        }
+        .flex-container3{
+            display: flex;
+            background-color: blueviolet;
+            height: 100px;
+        }
+        .flex_item3{
+            background-color: blanchedalmond;
+            margin: 10px;
+            width: 100px;
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div style="order: 3; flex-grow: 1;" class="flex_item">menu1</div>
+        <div style="order: 1; flex-grow: 1;" class="flex_item">menu2sadfsg</div>
+        <div style="order: 2; flex-grow: 2;" class="flex_item">menu3ㄴㅈㅎㅈ</div>
+    </div>
+
+    <div class="flex-container">
+        <div style="order: 1; flex-shrink: 1;" class="flex_item2">menu1</div>
+        <div style="order: 2; flex-shrink: 1;" class="flex_item2">menu2</div>
+        <div style="order: 3; flex-shrink: 2;" class="flex_item2">menu3</div>
+        <div style="flex-basis: 200px" class="flex_item2">menu4</div>
+    </div>
+
+    <div class="flex-container3">
+        <div class="flex_item3">menu1</div>
+        <div style="align-self: center;" class="flex_item3">menu2</div>
+        <div style="align-self: flex-start" class="flex_item3">menu3</div>
+        <div style="align-self: flex-end" class="flex_item3">menu4</div>
+    </div>
+    
+</body>
+</html>

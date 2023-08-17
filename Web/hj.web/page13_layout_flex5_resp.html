@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <!-- 반응형 웹 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 레이아웃(Responsive Web)</title>
+    <style>
+        .my_header, .my_footer{
+            background-color: rgb(237, 221, 192);
+            height: 200px;
+            text-align: center;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .flex_container{
+            background-color: rgb(237, 221, 192);
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+        }
+        .flex_item{
+            margin: 20px;
+            padding: 10px;
+            flex: 50%;
+            border-radius: 10px;
+        }
+        .contents_left{
+            background-color: rgb(255, 255, 255);
+        }
+        .contents_right{
+            background-color: rgb(253, 253, 253);
+        }
+        @media (max-width: 600px){
+            .flex_container{
+            display: flex;
+            flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="my_header">검색창</div>
+    <div class="flex_container">
+        <div class="flex_item contents_left">컨텐츠1</div>
+        <div class="flex_item contents_right">컨텐츠2</div>
+    </div>
+    <div class="my_footer">NAVER</div>
+</body>
+</html>

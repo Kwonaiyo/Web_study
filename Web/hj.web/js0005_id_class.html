@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #id1{
+            color: red;
+        }
+        .class1{
+            color: blue;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <p id="id1">id_1</p>
+    <p id="id1">id_1</p>
+    <p id="id2">id_2</p>
+    <p class="class1">class_1</p>
+    <p class="class1">class_1</p>
+    <script>
+        function my_displayeer(x){
+            document.getElementById('id1').innerHTML="ㅋㅋ";
+            document.getElementById('id2').innerHTML="ㅋㅋㅋ";
+        }
+        my_displayeer();
+    </script>
+</body>
+</html>

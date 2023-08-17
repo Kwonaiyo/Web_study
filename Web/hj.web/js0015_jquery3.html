@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+        <style>
+            #panel, #flip{
+                padding: 5px;
+                text-align: center;
+                background-color: beige;
+            }
+            #panel{
+                padding: 50px;
+                /* display: none; */ /* slideDown할 때 none으로 시작해야 함.. */
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div id="flip">slide down하려면 누르세요</div>
+        <div id="panel">펼쳐질 컨텐츠</div>
+        <script>
+            $("#flip").click(
+                //()=>{$("#panel").slideUp()}
+                //()=>{$("#panel").slideDown()}
+                ()=>{$("#panel").slideToggle()}
+            );
+            
+        </script>
+    </body>
+</html>

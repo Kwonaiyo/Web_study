@@ -1,0 +1,40 @@
+<html>
+    <header>
+        <style>
+            .grid-container{
+                display: grid;
+                background-color: bisque;
+                grid-template-columns: 20% auto 20%;
+                gap: 5px;
+                padding: 10px;
+            }
+            .grid-item{
+                background-color: aquamarine;
+                text-align: center;
+                padding: 10px;
+            }
+            .item1{
+                grid-column: 1 / span 3;
+            }
+            .item2{
+                grid-row: 2 / span 2;
+            }
+            .item5{
+                grid-column: 2 / span 2;
+            }
+        </style>
+    </header>
+    <body>
+        <div class="grid-container">
+
+
+            <div class="grid-item item1">header</div>
+            <div class="grid-item item2">menu</div>
+            <div class="grid-item">main</div>
+            <div class="grid-item">right</div>
+            <div class="grid-item item5">footer</div>
+
+
+        </div>
+    </body>
+</html>
